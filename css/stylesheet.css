@@ -1,0 +1,78 @@
+/* 
+xxx     #FCA311 	橙						 RGB (252, 163, 17)						 
+xxx     #E5E5E5     
+xxx     #003049     深藍
+
+
+#F2E0D2     淺粉紅
+#D0604C     粉紅
+
+#2C455F     深藍    
+#FA8700     橙
+#14213D     淡黃
+#10D2E1     淺藍
+#2E2E2E     text
+
+*/
+
+
+/************************** 
+    Header
+***************************/
+
+header{
+    display: flex;
+    width: 100%;
+    background-color: #E5E5E5;
+}
+
+h1.logo{
+    color: #FCA311;
+    font-size: 38px;
+    font-weight: 600;
+    padding: 17px;
+    float: left;
+    font-family: 'Satisfy', cursive, sans-serif;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+nav a{
+    font-size: 20px;
+    margin: 0px 30px;
+}
+
+/************************** 
+    Home Page
+***************************/
+
+
+
+
+/************************** 
+    Footer
+***************************/
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
