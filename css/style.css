@@ -1,0 +1,477 @@
+/**
+Theme Name: 
+Author: Scarlett Liu
+Author URI: 
+Description: 
+License: 
+License URI: 
+Text Domain: 
+Template: 
+*/
+
+
+/************************** 
+    Common  
+***************************/
+
+/************************** 
+    Font Face
+***************************/
+
+@font-face {
+    font-family: "Gen-Sen-Rounded-Normal";
+    src: url("/assets/fonts/GenSenRounded-R.ttc") format("truetype");
+    font-weight: 400;
+    line-height: 1.2em;
+}
+
+@font-face {
+    font-family: "Gen-Sen-Rounded-Light";
+    src: url("/assets/fonts/GenSenRounded-L.ttc") format("truetype");
+    font-weight: 300;
+    line-height: 1.2em;
+}
+
+@font-face {
+    font-family: "Gen-Sen-Rounded-Medium";
+    src: url("/assets/fonts/GenSenRounded-M.ttc") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Gen-Sen-Rounded-Medium";
+    src: url("/assets/fonts/GenSenRounded-M.ttc") format("truetype");
+    font-weight: 500;
+}
+
+/* @font-face {
+    font-family: "Orbitron-Bold";
+    src: url("./assets/fonts/Orbitron-Bold.ttf") format("truetype");
+    font-weight: 700;
+    unicode-range: U+0020-007E;
+}
+
+@font-face {
+    font-family: "Orbitron-Medium";
+    src: url("./assets/fonts/Orbitron-Medium.ttf") format("truetype");
+    font-weight: 500;
+    unicode-range: U+0020-007E;
+}
+
+@font-face {
+    font-family: "Orbitron-Regular";
+    src: url("./assets/fonts/Orbitron-Regular.ttf") format("truetype");
+    font-weight: 400;
+    unicode-range: U+0020-007E;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("./assets/fonts/Montserrat-Regular.ttf") format("truetype");
+    font-weight: 400;
+    unicode-range: U+0020-007E;
+} 
+*/
+
+
+/************************** 
+    Font
+***************************/
+
+h1{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 1.3em;
+}
+
+h2{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 1.3em;
+}
+
+h3{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 1.3em;
+}
+
+p{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+a{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media only screen and (max-width: 1024px){
+    h1{
+        font-size: 60px;
+    }
+    
+    h2{
+        font-size: 50px;
+    }
+    
+    h3{
+        font-size: 30px;
+    }
+    
+    p{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    h1{
+        font-size: 50px;
+    }
+    
+    h2{
+        font-size: 35px;
+    }
+    
+    h3{
+        font-size: 25px;
+    }
+    
+    p,a{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    h1{
+        font-size: 40px;
+    }
+    
+    h2{
+        font-size: 30px;
+    }
+    
+    h3{
+        font-size: 22px;
+    }
+    
+    p, a{
+        font-size: 14px;
+    }
+}
+
+
+/************************** 
+    Color & Text Style
+***************************/
+
+.text-primary{
+    color: #2C455F;
+}
+
+.text-secondary{
+    color: #10D2E1;
+}
+
+.text-accent{
+    color: #FA8700;
+}
+
+a:link, a:visited{
+    color: #2C455F;
+}
+
+a:hover, a:active{
+    color: #10D2E1;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.border-primary{
+    border: #2C455F solid 5px;
+    border-radius: 20px;
+}
+
+.section > h2{
+    margin-bottom: 50px;
+}
+
+/* .text-underline{
+    position: relative;
+}
+
+.text-underline::before{
+    content:"";
+    border-bottom: #2C455F solid 5px;
+    width: 600px;
+    position: absolute;
+    top:20px;
+}
+ */
+.section{
+    padding: 100px;    
+    margin: 0 auto;
+}
+
+.text-underline{
+    margin: 0px 30%;
+    border-bottom: #2C455F solid 5px;
+}
+
+/************************** 
+    Header
+***************************/
+
+header{
+    display: flex;
+    width: 100%;
+/*     background-color: #2C455F;
+ */}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.logo{
+    color: #FCA311;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 800;
+    font-size: 38px;
+    padding: 17px;
+/*     float: left; */
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+nav a{
+    font-size: 20px;
+    margin: 0px 30px;
+}
+
+@media only screen and (max-width: 768px){
+    .logo{
+        font-size: 28px;
+    }
+
+    nav a{
+        font-size: 14px;
+        margin: 0px 20px;
+    }
+}
+
+
+
+/************************** 
+    Container, Page width
+***************************/
+
+.full-width-con{
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width:2560px) {
+    .full-width-con{
+        max-width: 80%;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.page-width-con{
+    width: 1400px;
+    margin: 0 auto;
+}
+
+/************************** 
+    Hero Banner - img
+***************************/
+
+.display-none{ 
+    display: none;
+}
+
+.banner-con img{
+    width: 100%;
+}
+
+/* @media only screen and (min-width:1921px) {
+    .display-xl{
+        display: block;
+    }
+}
+*/
+@media only screen /* and (max-width:1920px)  */and (min-width:1025px) {
+    .display-xl{
+        display: block;
+    }
+}
+
+@media only screen and (max-width:1024px) and (min-width:769px) {
+    .display-l{
+        display: block;
+    }
+}
+
+@media only screen and (max-width:768px) and (min-width:601px){
+    .display-m{
+        display: block;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .display-s{
+        display: block;
+    }
+}
+
+/************************** 
+    Home Page
+***************************/
+
+.section-primary{
+    background: #fdf0d5;
+}
+
+.section-secondary{
+/*     background: #FA8700; */
+/*     background: #10D2E1; */
+    background: #10d3e160;
+}
+
+
+.single-page-cards-section h3{
+    font-size: 26px;
+}
+
+.sp-cards-con{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.sp-single-card{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 50px 30px;
+}
+
+.sp-single-card h3{
+    display: none;
+    z-index: 3;
+}
+
+.sp-img-con{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+}
+
+.sp-single-card {
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: 20px;
+}
+
+/* Responsive */
+
+@media only screen and (min-width:1921px){
+    .sp-single-card{
+        width: 25%;
+    }    
+}
+
+
+
+
+/* Hover effect */
+
+.sp-single-card a:hover h3{
+    display: flex;
+}
+
+.sp-single-card a:hover .overlay{
+    z-index: 2;
+    background: #2C455F!important;
+    opacity: 0.8;
+}
+
+
+/************************** 
+    Footer
+***************************/
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
+
+
+
+
+/************************** 
+CSS guideline
+    layout- col-4 col-8 , page-width-con full-width-con, .side, .content
+    primary secondary accent  L M S
+    container : grid card form
+    components : btn input progress-bar a h1, p 
+    status: focus, disabled, feedback, success, error   | link visited hover active
+    base, btn, forms, grids, menus, tables
+***************************/
+
+
+/* 
+#F2E0D2     淺粉紅
+#D0604C     粉紅
+
+#2C455F     深藍    
+#10D2E1     淺藍
+#fdf0d5     淡黃
+#FA8700     橙
+#2E2E2E     text
+
+break pt: 
+1024 820 768 600 425
+*/
