@@ -16,7 +16,7 @@
 }
 
 /***************
-    P2
+    P2 - what to do angry
 ****************/
 
 
@@ -191,7 +191,7 @@ justify-content: center;
 
 
 /***************
-    P4
+    P4 - layout
 ****************/
 
 .day4main{
@@ -225,7 +225,7 @@ justify-content: center;
 /*     margin-top: 50px; */
     text-align: center;    
     font-size: 1em;
-    animation: day4move 100s infinite linear alternate;
+    animation: day4move 3s infinite linear alternate;
 }
 
 
@@ -236,7 +236,7 @@ justify-content: center;
         transform: translateX(0);
     }
     to {
-        transform: translateX(1200px);
+        transform: translateX(80%);
     }
 }
 
@@ -463,19 +463,21 @@ justify-content: center;
 
 .layout3 .container{
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    max-width: 95%;
-    margin: auto;
-    justify-content: space-around;
-    padding: 50px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0px auto;
+    padding: 0px;
     flex-wrap: wrap;    
 }
 
 .layout3 .col{
-    flex: 0 0 25%;
+    width: 30%;
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 40px 20px;
     box-shadow: #14213D 10px 5px 5px;
     border: #000000 1px solid;
 
@@ -525,10 +527,18 @@ justify-content: center;
 
 /* responsive */
 
+@media only screen and (max-width:1500px){
+    .layout3 .col {
+        width: 43%;
+        margin: 40px 25px;
+}
+}
+
+
 @media only screen and (max-width:991px){
     .layout3 .col {
-    flex: 0 0 95%;
-    margin: 40px;
+        width: 80%;
+        margin: 40px 1%;
 }
 }
 
@@ -651,7 +661,6 @@ justify-content: center;
 .layout4 footer li{
     width: 120px;
     text-align: center;
-
 }
 
 .layout4 footer a:link,.layout4 footer a:visited{
@@ -661,6 +670,20 @@ justify-content: center;
 .layout4 footer a:hover{
     color: #14213D;
 }
+
+
+@media screen and (max-width:600px){
+    .layout4 footer li{
+        width: 100%;
+        
+        /* font-size: 12px; */
+    }
+    .layout4 footer ul{
+        flex-wrap: wrap;
+    }
+}
+
+
 
 
 /* layout5 */
@@ -680,14 +703,16 @@ justify-content: center;
     border: #D0604C solid 1px;
     flex: 1 1 66.6%;
     padding: 30px;
-    height: 300px;
 }
 
 .layout5 .col{
     border: #D0604C solid 1px;
     flex: 1 1 33.3%;
     padding: 30px;
-    height: 300px;
+}
+
+.layout5 .col, .layout5 .col-main{
+    height: 320px;
 }
 
 .layout5 h3{
@@ -696,30 +721,47 @@ justify-content: center;
 
 /* responsive */
 
-@media screen and (max-width:991px) {
+@media screen and (min-width:1440px) {
+    .layout5 .col, .layout5 .col-main{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:1024px) {
     .layout5 .col-main{
         flex: 1 1 80%;
     }
     .layout5 .col{
         flex: 1 1 40%;
     }
+    .layout5 .container{
+        padding: 40px;
+    }
+    .layout5 .col, .layout5 .col-main{
+        height: 320px;
+    }
 }
 
-@media screen and (max-width:767px){
+@media screen and (max-width:820px){
     .layout5 .col-main{
         flex: 1 1 80%;
     }
     .layout5 .col{
         flex: 1 1 80%;
+        height: 100%;
+    }
+    .layout5 .container{
+        padding: 50px;
     }
 }
 
 
 /* layout6 */
 
-.container0 div.layout6{
-    padding: 50px 150px 50px 150px;
-    background-color: #14213D;
+.layout6{
+    padding: 50px 120px;
+    background-color: #14213D!important;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -767,17 +809,24 @@ justify-content: center;
 
 /* responsive */
 
+/* @media screen and (max-width:1440px) {
+    .layout6 .container{
+        padding: 20px;
+    }
+} */
+
 @media screen and (max-width:991px) {
-    .container0 div.layout6{
-        padding: 50px 50px 150px 50px;
+    .layout6{
+        padding: 20px 50px 100px;
     }
 
     .layout6 .container{
         flex-direction: row;
+        height: 700px;
     }
 
     .layout6 .col.main{
-        height: 60%;
+        height: 50%;
         flex: 1 1 100%;
         font-size: 70px;
     }
@@ -786,7 +835,23 @@ justify-content: center;
         height: 30%;
         font-size: 45px;
     }
+}
 
+@media screen and (max-width:600px) {
+    .layout6{
+        padding: 10px;
+        padding-bottom: 100px;
+    }
+    .layout6 .col-words {
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width:425px) {
+
+    .layout6 .col.main, .layout6 .col{
+        height: 35%;
+    }
 }
 
 /* layout7 */
@@ -794,7 +859,7 @@ justify-content: center;
 .layout7 .container{
     display: flex;
     background-color: #14213D;
-    padding: 50px;
+    padding: 30px;
     justify-content: center;
     align-items: center;
 }
@@ -839,14 +904,29 @@ justify-content: center;
     margin-right: 10px;
 }
 
-/* .layout7 .col:focus{
-
+@media screen and (max-width: 1440px) {
+    .layout7 .container{
+        font-size: 12px;
+    }
 }
 
-.layout7 .col:focus i{
-    color: #D0604C;
-} */
-/* 待處理 */
+
+
+@media screen and (max-width: 820px) {
+    .layout7 .container{
+        flex-wrap: wrap;
+        padding: 10px;
+        font-size: 12px;
+    }
+    .layout7 .col{
+        width: 80%;
+        margin: 10px;
+    }
+}
+
+
+
+
 
 /* layout8 */
 
@@ -867,7 +947,7 @@ justify-content: center;
     margin: 1px;
 }
 
-/* 1 */
+/* 8.1 */
 
 .layout8 .row1{
     display: flex;
@@ -885,7 +965,16 @@ justify-content: center;
     margin: 20px;
 }
 
-/* 2 */
+
+@media screen and (max-width: 1440px) {
+    .layout8 .row1 .col{
+        flex-direction: column;
+    }
+}
+
+
+
+/* 8.2 */
 
 .layout8 .row2{
     display: flex;
@@ -938,6 +1027,24 @@ justify-content: center;
 }
 .layout8 img{
     padding: 10px;
+}
+
+
+@media screen and (max-width:991px) {
+    .layout8 .row{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .layout8 .row .col {
+        width: 80%;
+    }
+    .layout8 .row3 .col{
+        flex-direction: column;
+    }
+    .layout8 .row3 :nth-child(2).col{
+        flex-direction: column;
+    }
 }
 
 
@@ -1000,7 +1107,16 @@ justify-content: center;
 
 }
 .layout9 .menucontainer li{
-    width: 100px;
+    padding: 10px;
+}
+
+
+@media screen and (max-width:820px) {
+    .layout9 .menucontainer {
+        flex-direction: column;
+        height: 100px;
+    }
+    
 }
 
 
@@ -1076,6 +1192,24 @@ justify-content: center;
 
 .layout10 {
     margin-bottom: 60px;
+}
+
+
+@media screen and (max-width:991px) {
+    .layout10 .content{
+        flex-direction: column;
+    }
+    .layout10 .photos img{
+        max-width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width:600px) {
+    .layout10 .top p{
+        display: none;
+    }
 }
 
 
@@ -1337,13 +1471,13 @@ justify-content: center;
     margin: 0 auto;
     background-color:#000;
     color: #D0604C;
-    padding-top: 0;
+    padding: 20px;
     width: 75%;
 }
 
 .day8main h1{
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     color: #FCA311;
 }
 
@@ -1383,7 +1517,7 @@ justify-content: center;
 
 .grid-container1 .header{
     grid-area: header;
-    background: url("website1/img/garden_in_garden_nature.jpg") no-repeat;
+    background: url("/assets/images/p8-1.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -1435,7 +1569,7 @@ justify-content: center;
 }
 
 .grid-container1 .content1 div{
-    background: url("https://pikwizard.com/pw/medium/1591be3c148f29cb2ee03955d4eb3ad6.avif") no-repeat;
+    background: url("https://pikwizard.com/pw/medium/1591be3c148f29cb2ee03955d4eb3ad6.avif") no-repeat center center;
     background-size: cover;
     width: 80%;
     height: 350px;
@@ -1444,7 +1578,7 @@ justify-content: center;
 }
 
 .grid-container1 .content2 div{
-    background: url("https://pikwizard.com/pw/medium/e1cf409e00d97d2197fa92e4d4350f99.avif") no-repeat;
+    background: url("https://pikwizard.com/pw/medium/e1cf409e00d97d2197fa92e4d4350f99.avif") no-repeat center center;
     background-size: cover;
     width: 80%;
     height: 350px;
@@ -1521,4 +1655,27 @@ justify-content: center;
     background-color: #D0604C;
     border: #fff solid 10px;
     border-top: none;
+}
+
+@media screen and (max-width:820px){
+    .grid-container1 .side{
+        display: none;
+    }
+    .grid-container1 .content{
+        margin-right: 10px;
+    }
+    .day8main .grid-container1{
+        grid-gap: 0px;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 400px 50px 250px 400px 120px 400px 50px;
+        grid-template-areas:
+        "header"
+        "nav"
+        "content"
+        "content"
+        "content"
+        "content"
+        "footer";
+    }
+    
 }

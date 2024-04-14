@@ -1,7 +1,7 @@
 
 <!-- main -->
 <main class="cu-single-page day8main">
-    <h1>Layout 1</h1>
+    <h1>Newsletter Layout</h1>
     <div class="grid-container1">
         <div class="header"></div>
         
@@ -28,20 +28,20 @@
             </article>
         </div>
 
-        <div class="sideAboutme">
+        <div class="side sideAboutme">
             <h3>About Me</h3>
             <div></div>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
         </div>
 
-        <div class="sidePost">
+        <div class=" side sidePost">
             <h3>Popular Post</h3>
             <div></div>
             <div></div>
             <div></div>
         </div>
 
-        <div class="sideFollow">
+        <div class="side sideFollow">
             <h3>Follow Me</h3>
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-instagram"></i>
